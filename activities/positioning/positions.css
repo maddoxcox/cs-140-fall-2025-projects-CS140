@@ -1,0 +1,4 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif; background-color: bisque;}
+figure {border-style: double; float:left;}
+span {color: rgb(79, 150, 150);}
+.hammer{ position:relative; }
