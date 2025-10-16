@@ -1,0 +1,54 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+header {font-family: sans-serif;
+        background-color: aqua; 
+        border-style:double;
+        border-width: 20px;
+        text-align: center;
+        margin:25px;
+        padding:25px;
+        border-radius: 50px;
+        background-image: url(sktbd.png); background-repeat: no-repeat;
+        background-origin:content-box;
+        background-clip:padding-box;}
+
+h1 {font-size:50px;
+    font-weight: 100;
+    font-style:oblique;
+    }
+
+figure {float:left;
+        border: groove 10px rgb(134, 207, 134);
+        box-shadow: 10px 10px 10px green;
+        ;}  
+figcaption {text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform:uppercase;
+            font-weight:bold;}
+p {text-shadow:10px 10px 5px rgb(7, 234, 255);}
+
+nav a{ text-decoration: none; 
+    border: 5px solid pink;
+    display:block;
+    background-color: pink;
+    margin: 10px;
+    text-align: center;
+    padding:25px;
+    width:100px;
+    height:25px;
+    border-radius:50px;
+    }
+
+nav a:hover {background-color: aliceblue;}
+
+nav {width:auto;}
+
+footer {
+        background-repeat: no-repeat;
+        background-position: right;
+        clear:both;
+        text-align: center;}
+
+.wrapper {width: 900px;
+        margin: 0 auto
+        ;background-color: blanchedalmond; border: 5px solid grey}
