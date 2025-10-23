@@ -1,0 +1,49 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1{
+    background:aqua;
+    border:5px double rgb(168, 10, 168)
+}
+
+nav{
+    display:flex; justify-content: space-around;background-color: rgb(251, 240, 226);
+}
+
+nav a{text-decoration: none; color:rgb(232, 108, 7); font-weight: bolder; font-style: italic;
+    }
+
+nav a:hover{
+    background-color: red; border-radius: 10px; padding:10px
+}
+
+.flex{display:flex; ; flex-wrap:wrap;
+    gap:10px; justify-content: center;
+}
+
+.card{
+    border:2px solid rgb(125, 117, 117)
+}
+
+img{
+    border-bottom:2px solid rgb(125, 117, 117)
+}
+
+.aside{
+    display:flex;
+}
+
+.footer{
+    display:block;
+}
+
+.footers {
+    display:grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, auto); gap: 5px; justify-items:center;
+}
+
+.a {
+    display:block
+}
