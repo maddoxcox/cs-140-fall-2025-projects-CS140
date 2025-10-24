@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article{
+    font-family: sans-serif
+}
+
+nav{
+display: none}
+
+nav a{
+    text-decoration: none; 
+}
+
+a {
+    background-color: antiquewhite; border:5px solid grey; padding:5px; display:block
+}
+
+nav a:hover{
+    background-color: rgb(101, 161, 142); border:5px solid rgb(115, 91, 91); border-radius: 10px; padding: 25px
+}
+
+.wrapper{
+    display:flex;
+}
+
+.cardcolumn{display:flex;flex-flow:wrap;}
+
+.card{
+    border:2px solid grey; ;
+}
+
+.card img{
+    width: 100%;
+}
