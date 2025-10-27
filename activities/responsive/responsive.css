@@ -38,3 +38,14 @@ span{
     color:rgb(218, 84, 84); text-shadow: 10px red;
 }
 
+.card:hover{background-color: aquamarine;padding:10px; border:10px solid blue; margin: 50px}
+
+@media ONLY screen and (max-width:400px){
+    nav{
+        flex-direction:column
+    }
+    .sidebar{
+        display:none
+    }
+}
+
