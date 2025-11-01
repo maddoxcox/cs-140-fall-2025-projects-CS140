@@ -20,8 +20,38 @@ nav a:hover{
     background-color: blue;padding:15px
 }
 
-.wrapper{ display:flex;flex-wrap: wrap; gap:10px;}
+.wrapper{ display:flex;flex-wrap: wrap; gap:10px; justify-content: space-evenly;}
 
-.card{background-color:white;box-shadow: 2px 2px 2px rgb(112, 107, 107); width:200px; border-radius: 10px;}
+.card{background-color:white;box-shadow: 2px 2px 2px rgb(112, 107, 107);width:28%; border-radius: 10px;}
 
-img {width:200px;border-radius: 10px; border-bottom-left-radius: 0; border-bottom-right-radius: 0px;}
+img {width:100%;border-radius: 10px; border-bottom-left-radius: 0; border-bottom-right-radius: 0px;}
+
+.sidebar{
+    display:flex;
+}
+
+aside{
+ width:100%; border-right:2px solid black;
+}
+
+footer{text-align: center;}
+
+.trio{
+    text-align: center;text-decoration: underline;
+}
+
+figure{width:50%; border:2px solid grey; border-radius:10px}
+
+
+@media print{
+    nav{display:none}
+    footer{display:none}
+}
+
+@media ONLY screen and (max-width:500px){
+    nav{flex-direction: column;}
+    nav a{text-align: center;}
+    .sidebar{flex-direction: column-reverse;}
+    aside{border:none; width:100%}
+    .wrapper{border-bottom:10px double black;padding: 10px;}
+}
