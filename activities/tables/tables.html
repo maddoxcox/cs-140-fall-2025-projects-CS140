@@ -21,15 +21,18 @@
         When do you need to do extra work for table accessibility?<span>when your are creating a webpage for a big company and you do not want to be sued. also when you are labeling things from the left.</span>
         </p>
         <hr>
-        <table border="1">
+        <table class="table1">
             <caption>my class schedule</caption>
-            <tr>
+            <thead>
                 <th>Department</th>
                 <th>Number</th>
                 <th>Title</th>
                 <th>Time</th>
                 <th>Location</th>
                 <th>Credits</th>
+            </thead>
+            <tr>
+                <th colspan="6">Fall 2025</th>
             </tr>
             <tr>
                 <td>CS</td>
@@ -52,6 +55,16 @@
                 <td header="total credits">6</td>
             </tr>
         </table>
+        <div>
+            <dl>
+                <h2>questions:</h2>
+                <dt>Why don't we use the border attribute?</dt>
+                    <dd>it is outdated, it is obsolete</dd>
+                <dt>What is the easiest way to color every other row a different color?</dt>
+                    <dd>select the &lt;tr&gt; and change the background color also with the "nth child"</dd>
+                
+            </dl>
+        </div>
     </main>
     <hr>
     <footer>

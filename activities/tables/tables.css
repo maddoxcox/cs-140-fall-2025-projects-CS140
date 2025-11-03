@@ -5,3 +5,25 @@ body{
 span{
     color: brown; text-decoration: underline;
 }
+
+.table1{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table1 thead{
+    background-color: blue; color: azure;
+}
+
+ td{background-color: antiquewhite;
+
+}
+
+h2{
+    text-decoration: underline;
+}
+
+dd{
+    color: blue;
+}
