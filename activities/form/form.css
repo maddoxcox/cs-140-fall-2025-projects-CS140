@@ -11,3 +11,45 @@ dt{text-decoration: underline}
 dd{
 color:brown;
 }
+
+.form-row{
+  display:flex; gap:10px; margin: 15px 0
+}
+
+.form-row label{
+    width: 150px; text-align: right
+}
+
+.spacer{
+    width: 150px;
+}
+
+.check-row{
+    display: flex; gap: 10px
+}
+
+fieldset{
+    margin: 15px 0; background-color: #8FF7A7;
+}
+
+legend{
+    border:thin solid; background-color: azure; padding: 10px; border-radius: 10px;
+}
+
+.form-row input:not([type=submit]){
+    padding:8px; border-radius: 10px; font-family: 'Times New Roman', Times, serif;background-color: #F7FE72
+}
+
+.form-row input[type=submit]{
+    padding:15px 10px 15px 10px; border-radius: 10px; ;
+}
+
+@media ONLY screen AND (max-width:480px){
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer{
+        text-align: left;
+    }
+}
