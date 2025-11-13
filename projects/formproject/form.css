@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; background-color: #6290C8;
+}
+
+main{
+    margin:20px 10px 20px 10px
+}
+
+header{
+    background-color: #FE938C; border-radius: 10px; padding: 10px
+}
+
+h1{
+    border-bottom: thick dotted; text-align: center;
+}
+
+nav{
+    background-color: #FE938C; display:flex; justify-content: space-around; padding: 5px
+}
+
+nav a{
+    text-decoration: none; background-color: #E6B89C; padding:10px; border-radius: 10px;
+}
+
+nav a:hover{
+    padding: 25px; background-color: azure;
+}
+
+legend{
+    background-color:#829CBC ; padding: 10px; border: thin solid; border-radius: 10px;
+}
+
+fieldset{
+    background-color: #A57548; margin-top:15px; margin-left: 0;margin-right: 0
+}
+
+.form-box{
+ display:flex; 
+}
+
+.form-box label{
+    width:150px; text-align:right
+}
+
+input{
+    background-color: #FCD7AD; padding: 5px; 
+}
+
+.radioz{
+    display:flex; justify-content: space-around;
+}
+
+.spacer{
+    width:200px;
+}
+
+.submit{
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center; margin-top: 10px; padding:10px
+}
+
+
+
+@media ONLY screen and (max-width:500px){
+    nav{
+        display:flex; flex-direction: column; 
+    }
+
+    nav a{
+        text-align: center; margin: 5px
+    }
+
+    .form-box{
+        display:flex; flex-direction: column;
+    }
+
+    .form-box label{
+        text-align: center; text-decoration: underline;
+    }
+
+    .submit{
+        padding:20px; border-radius: 10px; margin-left:20px; margin-right:20px
+    }
+}
