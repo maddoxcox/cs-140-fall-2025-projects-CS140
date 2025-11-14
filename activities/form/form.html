@@ -20,20 +20,20 @@
     </nav>
     <hr>
     <main>
-        <form action="formprocess.html" method="get">
+        <form action="formprocess.html" method="get" id="myform">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
                     <label for="fname">Full Name:</label>
-                    <input type="text" name="fname" placeholder="una at apeliyado">
+                    <input type="text" name="fname" placeholder="una at apeliyado" id="fullname">
                 </div>
                 <div class="form-row">
                     <label for="fname">Email:</label>
-                    <input type="email" name="fname" value="your@email.com" id="fname">
+                    <input type="email" name="fname" value="your@email.com" id="email">
                 </div>
                 <div class="form-row">
                     <label for="pass"> Password:</label>
-                    <input type="password" name="pass">
+                    <input type="password" name="pass" id="pass">
                 </div>
             </fieldset>
             <fieldset>
@@ -67,16 +67,41 @@
         </form>
     <hr>
         <dl>
-            <dt>What are different ways to style your form<dt>
-                <dd>many ways, you can change the border, background color, text family of the input. you can also change the spacing and alignment.</dd>
-            <dt>How does flex help for both Desktop and Mobile phones?</dt>
-                <dd>it allows it change to vertical when it is on a phone and to horizontal on a desktop. I like it more than grid 1000%</dd>
+            <dt>What is JavaScript? How did it get its name?<dt>
+                <dd>it is a programming language that is used to make your HTML interactive. your HTML is able to do aksyons</dd>
+            <dt>What are the two ways you can run JavaScript?</dt>
+                <dd>in the DOM or in other words in the browser. the other way is node.js</dd>
+            <dt>What was the most popular front-end js library?</dt>
+                <dd>Jquery</dd>
+            <dt>What is the most popular front-end js library today<dt>                
+                <dd>React</dd>
+
         </dl>
     </main>
     <hr>
     <footer>
         &copy;cox 2025
     </footer>
- <script src="form.js"></script>
+    <script>
+        document.getElementById("myform").addEventListener("submit",function(event) {
+            event.preventDefault();
+            alert("Form Submitted! Good Job!");
+
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+
+            if (!fullname || !email) {
+                alert("you need a name and email.");
+                return;
+            }
+            
+            if (!password) {
+                alert("password is needed");
+                return;
+            }
+        
+        })
+    </script>
 </body>
 </html>
