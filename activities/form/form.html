@@ -20,88 +20,65 @@
     </nav>
     <hr>
     <main>
-        <form action="formprocess.html" method="get" id="myform">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <div class="form-row">
-                    <label for="fname">Full Name:</label>
-                    <input type="text" name="fname" placeholder="una at apeliyado" id="fullname">
-                </div>
-                <div class="form-row">
-                    <label for="fname">Email:</label>
-                    <input type="email" name="fname" value="your@email.com" id="email">
-                </div>
-                <div class="form-row">
-                    <label for="pass"> Password:</label>
-                    <input type="password" name="pass" id="pass">
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class="form-row">
-                    <label for="state>">State:</label>
-                        <select name="state" id="state">
-                            <option value="black">---</option>
-                            <option value="CA">California<option>
-                            <option vlaue="HI">Hawaii</option>
-                            <option value="UT">Utah</option>
-                        </select>
-                </div>
-                <div class="check-row">
-                    <div class="spacer"></div>
-                    <label><input type="checkbox"> I agree to the terms</label>
-                </div>
-                <div class="check-row">
-                    Gender
-                    <label><input type="radio" name="gender" value="male">Male</label>
-                    <label><input type="radio" name="gender" value="female">Female</label>
-                </div>
-                <div class="form-row">
-                    <label for="comment">Comments:</label>
-                    <textarea name="comment" id="comment">Yown!</textarea>
-                </div>
-                <div class="form-row">
-                    <div class="spacer"></div>
-                    <input type="submit" value="Sign Up">
-                </div>
-            </fieldset>
-        </form>
-    <hr>
-        <dl>
-            <dt>What is JavaScript? How did it get its name?<dt>
-                <dd>it is a programming language that is used to make your HTML interactive. your HTML is able to do aksyons</dd>
-            <dt>What are the two ways you can run JavaScript?</dt>
-                <dd>in the DOM or in other words in the browser. the other way is node.js</dd>
-            <dt>What was the most popular front-end js library?</dt>
-                <dd>Jquery</dd>
-            <dt>What is the most popular front-end js library today<dt>                
-                <dd>React</dd>
+        <div id="message"></div>
+            <form action="#" id="myForm">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-row">
+                        <label for="fname">Full Name:</label>
+                        <input type="text" name="fname" placeholder="una at apeliyado" id="fullname">
+                    </div>
+                    <div class="form-row">
+                        <label for="fname">Email:</label>
+                        <input type="email" name="fname" value="your@email.com" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass"> Password:</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-row">
+                        <label for="state>">State:</label>
+                            <select name="state" id="state">
+                                <option value="black">---</option>
+                                <option value="CA">California<option>
+                                <option vlaue="HI">Hawaii</option>
+                                <option value="UT">Utah</option>
+                            </select>
+                    </div>
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox"> I agree to the terms</label>
+                    </div>
+                    <div class="check-row">
+                        Gender
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="comment">Comments:</label>
+                        <textarea name="comment" id="comment">Yown!</textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </fieldset>
+            </form>
+        <hr>
+            <dl>
+                <dt>What is AJAX?<dt>
+                    <dd>it is the JS that creates a new HTML page when you submit a form</dd>
+                <dt>Why do you put your JS Code in a separate file?</dt>
+                    <dd>It makes your code cleaner and easier to see... more clear and organized. it also is reausable when like that.</dd>
 
-        </dl>
+            </dl>
     </main>
     <hr>
     <footer>
         &copy;cox 2025
     </footer>
-    <script>
-        document.getElementById("myform").addEventListener("submit",function(event) {
-            event.preventDefault();
-            alert("Form Submitted! Good Job!");
-
-            const fullname = document.getElementById("fullname").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("pass").value;
-
-            if (!fullname || !email) {
-                alert("you need a name and email.");
-                return;
-            }
-            
-            if (!password) {
-                alert("password is needed");
-                return;
-            }
-        
-        })
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
