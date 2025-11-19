@@ -1,13 +1,13 @@
 document.getElementById("myForm").addEventListener("submit",function(event) {
             event.preventDefault();
-            alert("Form Submitted! Good Job!");
+            alert("Form Submitted");
 
             const fullname = document.getElementById("fullname").value;
             const email = document.getElementById("email").value;
             const password = document.getElementById("pass").value;
 
-            if (!fullname || !email) {
-                alert("you need a name and email.");
+            if (!fullname) {
+                alert("walang nakalagay na pangalan.");
                 return;
             }
             
@@ -15,6 +15,17 @@ document.getElementById("myForm").addEventListener("submit",function(event) {
                 alert("password is needed");
                 return;
             };
+
+            if (!email) {
+                alert("email is needed");
+                return;
+            }
+
+            if (password.length < 8) {
+                alert('Password must be greater than 8 characters long.');
+                return;
+            }
+
 
             const formData = {
                 fullname: fullname,

@@ -44,6 +44,35 @@ legend{
     padding:15px 10px 15px 10px; border-radius: 10px; ;
 }
 
+.line{
+    background-color:black; display:block; height: 4px;
+    border-radius: 10px;
+    
+}
+
+.hamburger{
+    display:flex; 
+    height: 50px; 
+    width: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    border: medium solid rgb(254, 91, 91);
+    border-radius: 5px;
+    background-color: rgb(255, 206, 46);
+    padding: 5px
+}
+
+.hamburger:hover{
+    background-color: azure;
+    padding: 10px
+}
+
+#message{
+    text-align: center;
+    font-size: xx-large;
+}
+
 @media ONLY screen AND (max-width:480px){
     .form-row, .check-row {
         flex-direction: column;
