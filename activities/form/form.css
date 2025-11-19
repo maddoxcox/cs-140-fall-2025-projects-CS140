@@ -2,15 +2,6 @@ body{
     background-color: azure;
 }
 
-dl{
-    border:medium solid; border-radius: 10px;padding:10px;text-align: center;
-}
-
-dt{text-decoration: underline}
-
-dd{
-color:brown;
-}
 
 .form-row{
   display:flex; gap:10px; margin: 15px 0
