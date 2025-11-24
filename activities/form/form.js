@@ -9,7 +9,7 @@ document.getElementById("myForm").addEventListener("submit",function(event) {
             if (!fullname) {
                 alert("walang nakalagay na pangalan.");
                 return;
-            }
+            };
             
             if (!password) {
                 alert("password is needed");
@@ -19,12 +19,12 @@ document.getElementById("myForm").addEventListener("submit",function(event) {
             if (!email) {
                 alert("email is needed");
                 return;
-            }
+            };
 
             if (password.length < 8) {
                 alert('Password must be greater than 8 characters long.');
                 return;
-            }
+            };
 
 
             const formData = {
