@@ -1,5 +1,10 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;background-color:#70D6EB;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#BEE8FF;
+}
+
+.ulo{
+    padding:10px 5px 10px 5px
 }
 
 span{
@@ -8,7 +13,7 @@ span{
 }
 
 header{
-    background-color: #6FA054; 
+    background-color: #FFF6C2; 
     border-radius: 10px;
     border: 5px double black;
     margin-left: 75px; 
@@ -21,12 +26,24 @@ h1{text-align: center;
     padding-bottom: 10px;
 }
 
+h3{
+    text-align: center;
+    font-style: italic;
+    text-shadow: 8px 8px 8px grey;
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
 nav{
     display:flex; 
     justify-content: space-between;
     padding:10px; 
-    background-color:#F2C14E;
+    background-color:#FFF6C2;
     border-radius:10px;
+}
+
+.current{
+    background-color: #F4E76E;
 }
 
 nav a{text-decoration:none; 
@@ -50,12 +67,28 @@ nav a:hover{
     justify-content: space-evenly;
 }
 
-.card{background-color:white;
+.card{
+    background-color:white;
     box-shadow: 2px 2px 2px rgb(112, 107, 107);
-    width:28%; border-radius: 10px;
+    width:90%; 
+    border-radius: 10px;
+    max-width:800px;
+    margin: 0 auto;;
+}
+
+.summarycard{
+    background-color:white;
+    box-shadow: 2px 2px 2px rgb(112, 107, 107);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding:10px;
+    height:auto;
+
 }
 
 img {width:100%;
+    height:100%;
     border-radius: 10px; 
     border-bottom-left-radius: 0; 
     border-bottom-right-radius: 0px;
@@ -63,11 +96,21 @@ img {width:100%;
 
 .sidebar{
     display:flex;
+    padding: ;
+    margin:25px 0 25px 0
 }
 
 aside{
- width:100%; 
- border-right:2px solid black
+ border-right:2px solid black;
+ max-width: 800px;
+ margin: 0 auto;
+padding:10px;
+
+}
+
+figcaption{
+text-align: center;
+font-weight: bold;
 }
 
 footer{
@@ -82,7 +125,8 @@ footer{
 figure{
     width:50%; 
     border:2px solid grey;
-     border-radius:10px
+    border-radius:10px;
+    background-color: #FFF6C2;
     }
 /*pang index.html*/
 
