@@ -134,10 +134,10 @@ figure{
 
 /*pang table*/
 table{
-    margin-left: 70px;
-    margin-right: 70px;
     border-collapse: collapse;
     border-spacing: 0;
+    max-width: 900px;
+    margin: 0 auto;
 }   
 
 caption{
@@ -226,6 +226,12 @@ legend{
     .wrapper{border-bottom:10px double black;padding: 10px;}
     
     .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    table{
+        width:100%;
+        display:flex;
         flex-direction: column;
     }
 
