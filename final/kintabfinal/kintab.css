@@ -26,7 +26,7 @@ h1{text-align: center;
     padding-bottom: 10px;
 }
 
-h3{
+.h3-index{
     text-align: center;
     font-style: italic;
     text-shadow: 8px 8px 8px grey;
@@ -191,7 +191,7 @@ th{
 }
 
 fieldset{
-    margin: 15px 0; background-color: #8FF7A7;
+    margin: 15px 0; background-image: url(bula\ bula.jpeg);
 }
 
 legend{
@@ -199,7 +199,7 @@ legend{
 }
 
 .form-row input:not([type=submit]){
-    padding:8px; border-radius: 10px; font-family: 'Times New Roman', Times, serif;background-color: #F7FE72
+    padding:8px; border-radius: 10px; font-family: 'Times New Roman', Times, serif;background-color: #ffffff
 }
 
 .form-row input[type=submit]{
@@ -211,7 +211,37 @@ legend{
     font-size: xx-large;
 }
 
+label{
+    color:rgb(237, 149, 237);
+    font-weight: bold;
+}
 /*pang signupform*/
+
+/*pang marketing page*/
+.h2-marketingpage{
+    text-align: center;
+}
+
+.marketing-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding:5px 10px 5px 10px;
+}
+
+.magulang-marketingcard{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-evenly;
+}
+
+.gitnain{
+    text-align: center;
+}
+/*pang marketing page*/
 
 @media print{
     nav{display:none}
