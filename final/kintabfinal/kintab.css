@@ -96,7 +96,6 @@ img {width:100%;
 
 .sidebar{
     display:flex;
-    padding: ;
     margin:25px 0 25px 0
 }
 
@@ -291,7 +290,6 @@ label{
 
 .financial-wrapper{
     display:flex;
-    justify-content;
 }
 
 /*pang financial page*/
