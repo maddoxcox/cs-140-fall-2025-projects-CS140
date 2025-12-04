@@ -168,6 +168,12 @@ th{
     
 
 }
+
+iframe{
+    display:block;
+    margin:0 auto;
+
+}
 /*pang table*/
 
 
@@ -247,6 +253,48 @@ label{
     text-align: center;
 }
 /*pang marketing page*/
+
+/*pang financial page*/
+.financial-h2{
+    background-image: url(pera.jpeg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: right;
+    padding: 25px;
+    border:medium solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.financial-page{
+    color:black;
+    text-decoration: none;
+}
+
+.financial-main{
+    text-align: center;
+    background-color: #B3FAC3;
+    border-radius: 10px;
+    border: thick solid black;
+    border-style: double;
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+.money-list{
+    background-color: white;
+    padding:5px 5px 25px 25px;
+    border-radius: 10px;
+
+}
+
+.financial-wrapper{
+    display:flex;
+    justify-content;
+}
+
+/*pang financial page*/
 
 @media print{
     nav{display:none}
