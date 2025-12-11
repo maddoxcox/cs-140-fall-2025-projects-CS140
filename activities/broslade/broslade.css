@@ -29,3 +29,20 @@ nav a{
     border-radius: 10px;
     padding:10px 20px 10px 20px;
 }
+
+.card{
+    margin: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    border:medium solid black;
+    border-radius: 10px;
+    padding:20px;
+    background-color: azure;
+}
